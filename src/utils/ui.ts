@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import AbortController from "abort-controller";
 
-import { KubescapeUi } from '@kubescape/install';
+import { KubescapeUi } from '@tymaoa2/install';
 
 import { Logger } from './log';
 

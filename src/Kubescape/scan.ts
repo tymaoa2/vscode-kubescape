@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 import { YamlHighlighter } from '@kubescape/yamlparse';
-import { KubescapeApi } from '@kubescape/install';
+import { KubescapeApi } from '@tymaoa2/install';
 
 import { VscodeUi } from '../utils/ui';
 import { Logger } from '../utils/log';

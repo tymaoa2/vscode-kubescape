@@ -121,8 +121,8 @@
     "vsce": "^2.14.0"
   },
   "dependencies": {
+    "@tymaoa2/install": "^0.1.2",
     "@kubescape/yamlparse": "^0.1.0",
-    "@kubescape/install": "^0.4.2",
     "abort-controller": "^3.0.0",
     "jsdom": "^19.0.0",
     "node-fetch": "^2.6.0"

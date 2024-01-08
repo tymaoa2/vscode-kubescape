@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-import { IKubescapeConfig, KubescapeApi } from '@kubescape/install';
+import { IKubescapeConfig, KubescapeApi } from '@tymaoa2/install';
 
 import * as kubescape from './Kubescape/kubescape';
 import * as scan from './Kubescape/scan';
