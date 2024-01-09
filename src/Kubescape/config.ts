@@ -5,6 +5,7 @@ import * as path from 'path';
 import { expend } from '../utils/path';
 import { getExtensionContext } from '../utils/context';
 import { PACKAGE_STABLE_BUILD } from './globals';
+import { Logger } from '../utils/log';
 
 const CONFIG_SCAN_ON_SAVE = "scanOnSave";
 const CONFIG_SCAN_FRAMEWORKS = "scanFrameworks";
@@ -12,6 +13,7 @@ const CONFIG_REQUIRED_FRAMEWORKS = "requiredFrameworks";
 const CONFIG_DIR_PATH = "dirPath";
 const CONFIG_VERSION_TIER = "versionTier";
 const CONFIG_CUSTOM_FRAMEWORKS_DIR = "customFrameworksDir";
+const CONFIG_CUSTOM_KUBESCAPE_BIN_URL = 'binaryUrl';
 
 export class KubescapeConfig {
     private static _instance: KubescapeConfig = new KubescapeConfig();
@@ -82,6 +84,16 @@ export class KubescapeConfig {
             return expend(fDir);
         } 
     
+        return undefined;
+    }
+
+    get customBinaryUrl() : string | undefined {
+        const binaryUrl = this.configuration[CONFIG_CUSTOM_KUBESCAPE_BIN_URL];
+        if (binaryUrl) {
+            /* Get kubescape binary from specific URL */
+            Logger.info(`Get customized binaryUrl : ${binaryUrl}`);
+            return binaryUrl;
+        } 
         return undefined;
     }
 }

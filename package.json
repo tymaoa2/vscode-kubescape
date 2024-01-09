@@ -88,6 +88,11 @@
           ],
           "default": "stable",
           "description": "Kubescape version tier"
+        },
+        "kubescape.binaryUrl": {
+          "type": "string",
+          "default": null,
+          "description": "URL to download Kubescape binary"
         }
       }
     }
@@ -121,7 +126,7 @@
     "vsce": "^2.14.0"
   },
   "dependencies": {
-    "@tymaoa2/install": "^0.1.3",
+    "@tymaoa2/install": "file:../node-kubescape",
     "@kubescape/yamlparse": "^0.1.0",
     "abort-controller": "^3.0.0",
     "jsdom": "^19.0.0",

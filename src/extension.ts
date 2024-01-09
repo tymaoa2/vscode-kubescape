@@ -111,5 +111,8 @@ async function initializeExtension(kubescapeApi : KubescapeApi) {
         get scanFrameworks(): string[] | undefined {
             return config.scanFrameworks;
         }
+		get binaryUrl(): string | undefined {
+            return config.customBinaryUrl;
+        }
     });
 }
