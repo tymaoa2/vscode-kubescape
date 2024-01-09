@@ -1,0 +1,66 @@
+[
+  {
+    "apiVersion": "regolibrary.kubescape/v1alpha1",
+    "kind": "AttackTrack",
+    "metadata": {
+      "name": "workload-external-track"
+    },
+    "spec": {
+      "data": {
+        "name": "Initial Access",
+        "description": "An attacker can access the Kubernetes environment.",
+        "subSteps": [
+          {
+            "name": "Execution (Vulnerable Image)",
+            "description": "An attacker can execute malicious code by exploiting vulnerable images.",
+            "subSteps": [
+              {
+                "name": "Data Collection",
+                "description": "An attacker can gather data."
+              },
+              {
+                "name": "Secret Access",
+                "description": "An attacker can steal secrets."
+              },
+              {
+                "name": "Credential access",
+                "description": "An attacker can steal account names and passwords."
+              },
+              {
+                "name": "Privilege Escalation (Node)",
+                "description": "An attacker can gain permissions and access node resources."
+              },
+              {
+                "name": "Persistence",
+                "description": "An attacker can create a foothold."
+              },
+              {
+                "name": "Lateral Movement (Network)",
+                "description": "An attacker can move through the network."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "apiVersion": "regolibrary.kubescape/v1alpha1",
+    "kind": "AttackTrack",
+    "metadata": {
+      "name": "service-destruction"
+    },
+    "spec": {
+      "data": {
+        "name": "Initial Access",
+        "description": "An attacker can access the Kubernetes environment.",
+        "subSteps": [
+          {
+            "name": "Denial of service",
+            "description": "An attacker can overload the workload, making it unavailable."
+          }
+        ]
+      }
+    }
+  }
+]
