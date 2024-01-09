@@ -1,7 +1,7 @@
 {
-  "name": "kubescape",
+  "name": "kubescape-tsmc",
   "preview": true,
-  "displayName": "Kubescape",
+  "displayName": "Kubescape-tsmc",
   "description": "Kubescape extension for vscode",
   "author": {
     "name": "Kubescape Team at Armo"
